@@ -1,0 +1,23 @@
+{
+  "id": "3304520",
+  "name": "sph",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "400155",
+      "name": "arrow-up",
+      "font_class": "arrowup",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "431576",
+      "name": "arrow-down",
+      "font_class": "arrowdown",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    }
+  ]
+}
