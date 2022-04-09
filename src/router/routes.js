@@ -1,7 +1,7 @@
 // 路由配置信息
 
-// 引入路由组件
-import Home from '@/pages/Home'
+// 引入路由组件--上来就直接执行了
+// --实际生产中应让所有路由都懒加载
 import Login from '@/pages/Login'
 import Search from '@/pages/Search'
 import Register from '@/pages/Register'
@@ -17,6 +17,13 @@ import Tohome from '@/pages/Tohome'
 // 引入二级路由组件
 import myOrder from '@/pages/Center/myOrder'
 import groupOrder from '@/pages/Center/groupOrder'
+
+/* 
+当打包构建应用时，JavaScript包会变得非常大，影响页面加载。
+如果能把不同的路由对应的组件分割成不同代码块，然后当路由被访问到的时候才加载对应的组件
+这样就更加高效了。
+*/
+
 
 export default [
     {   
@@ -102,7 +109,7 @@ export default [
     },
     {
         path:"/home",
-        component: Home,
+        component: ()=> import('@/pages/home'),//路由懒加载的简写形式
         meta:{show:true}
     },
     {
