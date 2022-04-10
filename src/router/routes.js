@@ -109,7 +109,7 @@ export default [
     },
     {
         path:"/home",
-        component: ()=> import('@/pages/home'),//路由懒加载的简写形式
+        component: ()=> import('@/pages/Home'),//路由懒加载的简写形式
         meta:{show:true}
     },
     {
